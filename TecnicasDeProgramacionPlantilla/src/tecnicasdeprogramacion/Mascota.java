@@ -15,6 +15,7 @@ public class Mascota {
     private String type;
     private String age;
     
+    
     public Mascota(String name, String type, String age){
         this.name = name;
         this.age = age;

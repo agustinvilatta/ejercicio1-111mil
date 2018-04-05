@@ -5,6 +5,7 @@
  */
 package tecnicasdeprogramacion;
 
+import java.util.Random;
 /**
  *
  * @author utku35
@@ -17,6 +18,19 @@ public class Persona {
         private int age;
         private float height;
         private float weight;
+        private Mascota miMascota;
+        
+        
+//metodo
+        public void pasearMascota (Mascota miMascota){
+        }
+        
+        public int elegirNum (int numeMax){
+        int numerito = random (numeMax);
+        return numerito;
+        }
+        
+        
         
         
     public Persona(String name, String lastName, String dni, int age, float height, float weight) {
@@ -28,9 +42,23 @@ public class Persona {
         this.weight = weight;
         
     }
-        
     
+
+    public String getpasearMascota(){
+        String paseo= "la mascota se está paseando.";
+        return paseo;
+    }
+    
+    public Mascota setpasearMascota (){
+            Mascota pasearMascota = null;
+        return pasearMascota;
+    }
+    
+    public Mascota getMiMascota() {
+        return miMascota;
+    }
         
+               
     public String getName(){
         return name;
     }
@@ -134,17 +162,25 @@ public class Persona {
         
     }
                         
-        
-    
     
     public void setLastName(String lastName) {
         this.lastName= mayusculizar(lastName);
-;
+
     }
 
     
     public void setDni(String dni) {
         this.dni = dni;
     }
+
+    public void setMiMascota(Mascota miMascota) {
+        this.miMascota = miMascota;
+    }
+
+    private int random(int numeMax) {
+      return   Random(numeMax);
+    }
+
+    
     
 }
